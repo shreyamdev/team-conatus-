@@ -12,48 +12,124 @@
         rel="stylesheet">
 
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background-color: rgb(5, 5, 75); color: white; font-family: 'Poppins', sans-serif; overflow-x: hidden; }
-        a { text-decoration: none; }
-        ul { list-style: none; }
+        * { margin: 0; padding: 0;
+             box-sizing: border-box; }
+        body { background-color: rgb(5, 5, 75);
+             color: white; font-family: 'Poppins', sans-serif; overflow-x: hidden; }
+        a { text-decoration: none; 
+        }
+        ul { list-style: none; 
+        }
 
-        nav { display: flex; justify-content: space-between; align-items: center; height: 90px; padding: 0 60px; background-color: rgb(5, 5, 37); flex-wrap: wrap; }
-        nav .left { font-size: 1.6rem; font-weight: 600; }
-        nav ul { display: flex; justify-content: center; flex-wrap: wrap; }
-        nav ul li { margin: 0 20px; }
-        nav ul li a { color: whitesmoke; transition: color 0.2s ease; }
-        nav ul li a:hover { color: rgb(140, 110, 255); }
+        nav { display: flex; justify-content: space-between; 
+            align-items: center; height: 90px; padding: 0 60px;
+             background-color: rgb(5, 5, 37);
+              flex-wrap: wrap; }
+        nav .left { font-size: 1.6rem; 
+            font-weight: 600; }
+        nav ul { display: flex;
+             justify-content: center; 
+             flex-wrap: wrap; }
+        nav ul li { margin: 0 20px;
+         }
+        nav ul li a { color: whitesmoke; 
+            transition: color 0.2s ease; }
+        nav ul li a:hover { color: rgb(140, 110, 255);
+         }
 
-        main hr { border: 0; background-color: rgb(86, 86, 226); height: 1.2px; margin: 40px 84px; }
-        .purple { color: rgb(171, 115, 224); }
-        #element { color: rgb(9, 203, 203); font-size: 1.3rem; display: inline-block; margin-top: 10px; }
+        main hr { border: 0; background-color: rgb(86, 86, 226);
+             height: 1.2px; margin:
+              40px 84px; }
+
+
+        .purple { color: rgb(171, 115, 224);
+         }
+
+        #element { color: rgb(9, 203, 203);
+             font-size: 1.3rem; display: inline-block;
+              margin-top: 10px; }
+
 
         .firstsection { display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; width: 90%; margin: 60px auto; min-height: 60vh; }
-        .leftsection { width: 50%; min-width: 280px; line-height: 1.6; padding: 30px; }
-        .leftsection h1 { font-size: 2.5rem; margin-bottom: 20px; }
-        .leftsection p { font-size: 1.2rem; line-height: 1.7; }
-        .rightsection { width: 40%; min-width: 260px; display: flex; justify-content: center; align-items: center; }
-        .rightsection img { width: 80%; max-width: 350px; border-radius: 12px; }
+        .leftsection { width: 50%; min-width:
+             280px; line-height: 1.6;
+              padding: 30px; }
+
+
+        .leftsection h1 { font-size: 2.5rem;
+             margin-bottom: 20px; }
+
+        .leftsection p { font-size: 1.2rem; 
+            line-height: 1.7; }
+
+        .rightsection { width: 40%; 
+            min-width: 260px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; }
+
+        .rightsection img { width: 80%;
+             max-width: 350px; 
+             border-radius: 12px; }
 
         .secondsection { max-width: 80vw; margin: 60px auto 0 auto; }
-        .secondsection h1, .thirdsection h1 { text-align: center; margin-bottom: 20px; }
-        .box { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; margin: 40px 0; }
-        .vertical { display: flex; flex-direction: column; align-items: center; width: 200px; text-align: center; }
-        .image-top { width: 40px; height: 40px; margin-bottom: 12px; }
-        .vertical-title h3 { font-size: 1.4rem; font-weight: 600; margin-bottom: 10px; }
-        .vertical-desc { width: 100%; }
-        .vertical-desc p { font-size: 0.85rem; line-height: 1.5; color: rgb(255, 221, 90); overflow-wrap: break-word; font-weight: 400; }
+        .secondsection h1, .thirdsection h1 { text-align: center; 
+            margin-bottom: 20px; }
 
-        .thirdsection { max-width: 80vw; margin: 60px auto; }
-        .goals-list { list-style: disc; max-width: 700px; margin: 0 auto 30px auto; line-height: 1.9; padding-left: 25px; }
-        .goals-summary { max-width: 700px; margin: 0 auto; text-align: center; font-size: 1.1rem; color: rgb(9, 203, 203); line-height: 1.7; }
+        .box { display: flex; justify-content: space-around;
+             flex-wrap: wrap; gap: 40px; margin: 40px 0; }
 
-        footer { background-color: rgb(21, 20, 48); padding: 40px 60px; margin-top: 60px; }
-        .footer { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px; max-width: 1000px; margin: 0 auto; }
-        .footer h3 { margin-bottom: 10px; }
-        footer ul li { margin-bottom: 8px; }
-        footer ul li a { color: whitesmoke; transition: color 0.2s ease; }
-        footer ul li a:hover { color: rgb(140, 110, 255); }
+        .vertical { display: flex; flex-direction: column; 
+            align-items: center; width: 200px;
+             text-align: center; }
+
+        .image-top { width: 40px;
+             height: 40px;
+              margin-bottom: 12px; }
+
+        .vertical-title h3 { font-size: 1.4rem; 
+            font-weight: 600; 
+            margin-bottom: 10px; }
+
+        .vertical-desc { width: 100%;
+         }
+
+        .vertical-desc p { font-size: 0.85rem; 
+            line-height: 1.5; color: rgb(255, 221, 90);
+             overflow-wrap: break-word; 
+             font-weight: 400; }
+
+        .thirdsection { max-width: 80vw;
+             margin: 60px auto; }
+
+        .goals-list { list-style: disc; 
+            max-width: 700px; margin: 0 auto 30px
+             auto; line-height: 1.9; 
+             padding-left: 25px; }
+
+        .goals-summary { max-width: 700px;
+             margin: 0 
+             auto; text-align:
+              center; font-size: 1.1rem; 
+              color: rgb(9, 203, 203); 
+              line-height: 1.7; }
+
+        footer { background-color: rgb(21, 20, 48);
+             padding: 40px 60px;
+              margin-top: 60px; }
+        .footer { display: flex; justify-content: space-between; 
+            align-items: flex-start; flex-wrap: wrap; 
+            gap: 20px; max-width: 1000px; 
+            margin: 0 auto; }
+        .footer h3 { margin-bottom: 10px;
+         }
+        footer ul li { margin-bottom: 8px; 
+        }
+        footer ul li a { color: whitesmoke; 
+            transition: color 0.2s ease; 
+        }
+        footer ul li a:hover { color: rgb(140, 110, 255); 
+        }
 
         @media (max-width: 768px) {
             .firstsection { flex-direction: column; text-align: center; }
@@ -192,6 +268,8 @@
                 <ul>
                     <li><a href="https://www.instagram.com/shreyam344/" target="_blank" rel="noopener">Instagram</a></li>
                     <li><a href="mailto:pandeyshreyam09@gmail.com">Email</a></li>
+                  
+
                 </ul>
             </div>
         </div>
