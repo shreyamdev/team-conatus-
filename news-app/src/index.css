@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased selection:bg-red-100 selection:text-red-900 dark:selection:bg-red-900/40 dark:selection:text-red-200;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight;
+  }
+}
+
+@layer utilities {
+  .editorial-border-b {
+    border-bottom: 3px double #d1d5db;
+  }
+  .dark .editorial-border-b {
+    border-bottom: 3px double #374151;
+  }
+
+  .editorial-lead::first-letter {
+    @apply float-left text-5xl font-serif leading-none pr-3 pt-1 font-bold text-ink-900 dark:text-gray-100;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 dark:bg-zinc-700 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400 dark:bg-zinc-600;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
